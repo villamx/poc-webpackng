@@ -1,0 +1,19 @@
+{
+    "name": "poc-webpackng",
+    "version": "1.0.0",
+    "keywords": [],
+    "author": "",
+    "contributors": [],
+    "scripts": {
+        "start": "node node_modules/webpack-dev-server/bin/webpack-dev-server --inline --content-base public"
+    },
+    "dependencies": {
+        "angular": ""
+    },
+    "devDependencies": {
+        "css-loader": "",
+        "style-loader": "",
+        "webpack": "",
+        "webpack-dev-server": ""
+    }
+}

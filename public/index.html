@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Angular with Webpack</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {margin: 0;}
+            .poc .title {
+                color: white;
+                background-color: #3186ed;
+                padding: 1em;
+                margin: 0;
+            }
+            .poc .content {margin: 0.5em;}
+            .poc .content .date {text-align: center;}
+        </style>
+    </head>
+    <body ng-app='poc' class="poc">
+
+        <h2 class="title">Welcome to Webpack and AngularJS _ Development World!</h2>
+        <div class="content" ng-controller="DefaultController as ctrl">
+            <div class="date">
+                <p>Today :: {{:: ctrl.today | date:"MM/dd/yyyy 'at' h:mm a" }}</p>
+            </div>
+            <h1> YOU = Webpack + AngularJS</h1>
+        </div>
+        <script src="bundle.js"></script>
+    </body>
+</html>
