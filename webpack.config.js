@@ -1,14 +1,21 @@
+var basedir = __dirname + '/public';
+
+console.log(basedir);
+
 module.exports = {
-    context: __dirname + '/public',
-    entry: './index.js',
+    /*context: basedir,*/
+    devtool: 'eval',
+    entry: [
+        basedir + '/index.js'
+    ],
     output: {
-        path: __dirname + '/public',
-        filename: 'bundle.js'
+        path: basedir,
+        filename: 'bundle.js',
+        publicPath: '/'
     },
     module: {
         loaders: [
             {test: /\.css$/, loader: "style-loader!css-loader"}
         ]
-    },
-    debug: true
+    }
 };
